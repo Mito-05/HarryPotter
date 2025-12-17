@@ -30,4 +30,9 @@ function displayPotterInfo(character){
         <strong>Patronus:</strong> ${patronus|| 'Desconocido'}
         </p>
     `;
+    potterInfoDiv.style.display = 'block'
 }
+form.addEventListener('submit', function (event){
+    event.preventDefault();
+    const characterName = input.Value.trim();
+});

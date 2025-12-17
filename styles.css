@@ -23,6 +23,7 @@ h1 {
     font-size: 36px;
     margin-bottom: 20px;
     color: rgb(3, 179, 3);
+    animation: flotar 3s ease-in-out infinite alternate;
 }
 form{
     display: flex;
@@ -38,11 +39,16 @@ input{
 button{
     border: 1px;
     border-radius: 5px;
+    width: 80px;
+    display: block;
+    margin: 0 auto;
 }
 
 button:hover{
     color: azure;
     background-color: rgb(126, 126, 126);
+    transition: color 0.3s, transform 0.2s;
+    transform: translateY(-3px);
     
 }
 
@@ -56,4 +62,21 @@ button:hover{
     object-fit: cover;
     border-radius: 50%;
     margin-bottom: 15px;
+}
+.potter-info h3{
+    font-size: 20px;
+}
+@keyframes flotar {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+    100% {
+        transform: translbateY(0);
+    }
+}
+.potter-info p{
+    
 }
